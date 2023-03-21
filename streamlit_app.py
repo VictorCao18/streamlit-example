@@ -1,3 +1,4 @@
+import streamlit as st
 def driving_cost(miles_per_gallon, dollars_per_gallon, miles_driven):
     dollars = (dollars_per_gallon / miles_per_gallon) * miles_driven
     return dollars 

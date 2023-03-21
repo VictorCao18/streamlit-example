@@ -1,7 +1,3 @@
-from collections import namedtuple
-import altair as alt
-import math
-import pandas as pd
 import streamlit as st
 
 """
@@ -16,13 +12,13 @@ def driving_cost(miles_per_gallon, dollars_per_gallon, miles_driven):
     return dollars 
 
 
-miles_per_gallon = st.number_input('Insert a number')
-dollars_per_gallon = st.number_input('Insert a number')
+miles_per_gallon = st.number_input('Insert miles per gallon')
+dollars_per_gallon = st.number_input('Insert dollar cost per gallon')
 
 miles1 = driving_cost(miles_per_gallon, dollars_per_gallon, 10.0)
 miles2 = driving_cost(miles_per_gallon, dollars_per_gallon, 50.0)
 miles3 = driving_cost(miles_per_gallon, dollars_per_gallon, 400.0)
 
-st.write(f'{miles1:.2f}')
-st.write(f'{miles2:.2f}')
-st.write(f'{miles3:.2f}')
+st.write(miles1)
+st.write(miles2)
+st.write(miles3)

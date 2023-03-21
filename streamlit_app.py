@@ -16,8 +16,8 @@ def driving_cost(miles_per_gallon, dollars_per_gallon, miles_driven):
     return dollars 
 
 
-miles_per_gallon = float(input())
-dollars_per_gallon = float(input())
+miles_per_gallon = float(input("> "))
+dollars_per_gallon = float(input("> "))
 
 miles1 = driving_cost(miles_per_gallon, dollars_per_gallon, 10.0)
 miles2 = driving_cost(miles_per_gallon, dollars_per_gallon, 50.0)
